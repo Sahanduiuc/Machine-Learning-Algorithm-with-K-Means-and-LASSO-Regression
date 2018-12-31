@@ -2,7 +2,7 @@
 
 This strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster, then uses an L1 regularization term (LASSO) to penalize the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing, or at least, that's the goal here
 
-I added as many comments in the source code as possible to help elucidate, step-by-step, how the code operates. Below are some notes I took after messing with it for a bit:
+Included in the source code are comments explaining step-by-step how the algorithm operates. 
 
 More clusters results in lower beta (expected that)
 Shifting market entry point by 17 days from month's start to try and coincide with the release of earnings reports resulted in -300% returns (unexpected, will have to test further to evaluate the best entry point)
@@ -17,7 +17,9 @@ Notes:
 </ul>
 
 <h1>The Algorithm</h1>
-<code>(
+
+<pre>
+<code>
 """
 Stocks are selected using k-means clustering to get a diversified portfolio. 
 Uses L1 regularization term to sparsify the portfolio weights and achieve an all-long portfolio.
@@ -173,4 +175,13 @@ def place_order(context,data):
 def record_vars(context, data):
     
     record(leverage=context.account.leverage)
-)</code>
+</code>
+</pre>
+
+# Analysis in Jupytr Notebook 
+
+
+
+# Conclusions
+
+
