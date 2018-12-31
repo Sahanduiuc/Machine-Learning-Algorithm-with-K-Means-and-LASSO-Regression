@@ -1,5 +1,5 @@
 # Machine-Learning-Algorithm-with-K-Means-and-LASSO-Regression
-Over recent months, I have developed a deep interest in the intersection between machine learning and finance that has led me to devise several ML-inspired trading algorithms of my own. After many iterations, I have produced the following algorithm that meets both my performance (beat the market) and model (accuracy without complexity) criteria. I hope my analysis and source code are informative and inspire you to further explore the possibilities of applied Artifical Intelligence!   
+Over recent months, I have developed a deep interest in the intersection between machine learning and finance that has led me to devise several ML-inspired trading algorithms of my own. After many iterations, I have produced the following algorithm that meets both my performance criteria (beat the market) and model critera (accuracy without complexity). I hope my analysis and source code are informative and inspire you to further explore the possibilities of applied Artifical Intelligence!   
 
 <h2>Overview</h2>
 My strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster (sector in the S&P500), then uses an L1 regularization term (LASSO) to penalize the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing. 
