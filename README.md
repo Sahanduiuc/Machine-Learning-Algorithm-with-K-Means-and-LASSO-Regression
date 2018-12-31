@@ -177,10 +177,3 @@ def record_vars(context, data):
     record(leverage=context.account.leverage)
 </code>
 </pre>
-
-# Analysis in Jupytr Notebook 
-
-
-# Conclusions
-
-
