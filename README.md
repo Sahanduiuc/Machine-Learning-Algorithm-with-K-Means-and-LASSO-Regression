@@ -5,7 +5,7 @@ Over recent months, I have developed a deep interest in the intersection between
 My strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster (sector in the S&P500), then uses an L1 regularisation term (LASSO) to penalise the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing. Included in the source code are comments explaining how the algorithm operates step-by-step. 
 <ul>
     </ul>
-Lessons Learned Formulating this Strategy:
+Lessons learned formulating this strategy:
 <ul>
 <li>More clusters lead to a lower beta</li>
 <li>Shifting market entry point by 17 days from month's start to try and coincide with the release of earnings reports resulted in -300% returns</li> 
