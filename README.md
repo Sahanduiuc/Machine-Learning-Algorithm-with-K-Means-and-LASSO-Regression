@@ -1,19 +1,21 @@
 # Machine-Learning-Algorithm-with-K-Means-and-LASSO-Regression
+Over recent months, I have developed a deep interest in the intersection between machine learning and finance that has led me to devise several ML-inspired trading algorithms of my own. After many iterations, I have produced the following algorithm that proves to fit all of my criteria: to outperform the market, and to be simple, but not simplsitic. I hope you learn from the provided analysis and source code and are inspired to explore the possibilities of applied Artifical Intelligence!   
 
-This strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster, then uses an L1 regularization term (LASSO) to penalize the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing, or at least, that's the goal here
+My strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster (sector in the S&P500), then uses an L1 regularization term (LASSO) to penalize the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing. 
 
-Included in the source code are comments explaining step-by-step how the algorithm operates. 
+Included in the source code are comments explaining how the algorithm operates step-by-step. 
 
-More clusters results in lower beta (expected that)
-Shifting market entry point by 17 days from month's start to try and coincide with the release of earnings reports resulted in -300% returns (unexpected, will have to test further to evaluate the best entry point)
-Cluster size of 30 seemed to provide the best risk/return tradeoff
-Kept penalization parameter at 2 for all tests
-This algo would not survive the 2008-2009 financial crisis
+Lessons learnt formulating this strategy:
+<ul>
+<li>More clusters lead to a lower beta</li>
+<li>Shifting market entry point by 17 days from month's start to try and coincide with the release of earnings reports resulted in -300% returns</li> 
+<li>Cluster size of 30 seemed to provide the best risk/return tradeoff</li>
+<li>Keep penalization parameter at 2 for all tests</li>
 
 Notes:
 <ul>
-<li>Exclude single stock clusters</li>
-<li>Maximum allocation to single stock limited to 30%</li>
+<li>I exclude single stock clusters</li>
+<li>I limit the maximum allocation to a single stock to 30%</li>
 </ul>
 
 <h1>The Algorithm</h1>
