@@ -12,8 +12,7 @@ Lessons learnt formulating this strategy:
 <li>Shifting market entry point by 17 days from month's start to try and coincide with the release of earnings reports resulted in -300% returns</li> 
 <li>Cluster size of 30 seemed to provide the best risk/return tradeoff</li>
 <li>Keep penalization parameter at 2 for all tests</li>
-
-
+</ul>
 Notes:
 <ul>
 <li>I exclude single stock clusters</li>
