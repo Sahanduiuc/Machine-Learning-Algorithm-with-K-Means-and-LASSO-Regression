@@ -2,11 +2,9 @@
 Over recent months, I have developed a deep interest in the intersection between machine learning and finance that has led me to devise several ML-inspired trading algorithms of my own. After many iterations, I have produced the following algorithm that meets both my performance criteria (beat the market) and model critera (accuracy without complexity). I hope my analysis and source code are informative and inspire you to further explore the possibilities of applied Artifical Intelligence!   
 
 <h2>Overview</h2>
-My strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster (sector in the S&P500), then uses an L1 regularisation term (LASSO) to penalise the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing. 
+My strategy dynamically chooses the top performing stocks (by Sharpe ratio) of each cluster (sector in the S&P500), then uses an L1 regularisation term (LASSO) to penalise the portfolio weights and achieve an all-long portfolio, with quarterly rebalancing. Included in the source code are comments explaining how the algorithm operates step-by-step. 
 
-Included in the source code are comments explaining how the algorithm operates step-by-step. 
-
-Lessons learnt formulating this strategy:
+Lessons learned Formulating this Strategy:
 <ul>
 <li>More clusters lead to a lower beta</li>
 <li>Shifting market entry point by 17 days from month's start to try and coincide with the release of earnings reports resulted in -300% returns</li> 
