@@ -17,7 +17,7 @@ Notes:
 </ul>
 
 <h1>The Algorithm</h1>
-<code>
+<code>(
 """
 Stocks are selected using k-means clustering to get a diversified portfolio. 
 Uses L1 regularization term to sparsify the portfolio weights and achieve an all-long portfolio.
@@ -173,4 +173,4 @@ def place_order(context,data):
 def record_vars(context, data):
     
     record(leverage=context.account.leverage)
-</code>
+)</code>
