@@ -13,6 +13,7 @@ Lessons learnt formulating this strategy:
 <li>Cluster size of 30 seemed to provide the best risk/return tradeoff</li>
 <li>Keep penalization parameter at 2 for all tests</li>
 
+
 Notes:
 <ul>
 <li>I exclude single stock clusters</li>
